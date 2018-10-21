@@ -28,6 +28,18 @@
 
 【6-5】[例一：链表创建](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/recursion/LinkedListCreator.java)
 
+【6-6】[例二：链表反转](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/recursion/LinkedListReverser.java)
+
+![](https://i.loli.net/2018/10/21/5bcc56b671885.jpg)
+
+
+
+![](https://i.loli.net/2018/10/21/5bcc56f0ab1b9.jpg)
+
+![](https://i.loli.net/2018/10/21/5bcc570c63386.jpg)
+
+![](https://i.loli.net/2018/10/21/5bcc573071b72.jpg)
+
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
 >
 > 链接: https://pan.baidu.com/s/1Hnuq4jGw2G9n4vS9-1SV_A 提取码: 1mw6
