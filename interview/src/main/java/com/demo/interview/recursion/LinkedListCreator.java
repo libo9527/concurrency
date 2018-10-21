@@ -1,5 +1,7 @@
 package com.demo.interview.recursion;
 
+import com.demo.interview.common.Node;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -37,5 +39,21 @@ public class LinkedListCreator {
                 creator.createLinkedList(Arrays.asList(1)));
         Node.printLinkedList(
                 creator.createLinkedList(Arrays.asList(1, 2, 3, 4, 5)));
+    }
+
+
+    public Node createLargeLindedList(int size) {
+        Node prev = null;
+        Node head = null;
+        for (int i = 1; i <= size; i++){
+            Node node = new Node(i);
+            if (prev != null){
+                prev.setNext(node);
+            }else {
+                head = node;
+            }
+            prev = node;
+        }
+        return head;
     }
 }

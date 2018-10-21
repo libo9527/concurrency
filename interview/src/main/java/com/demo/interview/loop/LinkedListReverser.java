@@ -1,6 +1,7 @@
-package com.demo.interview.recursion;
+package com.demo.interview.loop;
 
 import com.demo.interview.common.Node;
+import com.demo.interview.recursion.LinkedListCreator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,25 +9,27 @@ import java.util.Arrays;
 /**
  * @Description：
  * @Auther： libo
- * @date： 2018/10/21:18:30
+ * @date： 2018/10/21:22:12
  */
 public class LinkedListReverser {
 
-    /**
-     * Reverses a linked list.
-     *
-     * @param head the linked list to reverse
-     * @return head of the reversed linked list
-     */
     public Node reverseLinkedList(Node head) {
-        // size == 0 or size == 1
-        if (head == null || head.getNext() == null){
-            return head;
-        }
+        Node newHead = null;
+        Node curHead = head;
+        // Loop invariant:
+        // newHead points to the linked list already reversed.
+        // curHead points to the linked list not yet reversed.
 
-        Node newHead = reverseLinkedList(head.getNext());
-        head.getNext().setNext(head);
-        head.setNext(null);
+        // Loop invariant holds
+        while (curHead != null) {
+            // Loop invariant holds
+            Node next = curHead.getNext();
+            curHead.setNext(newHead);
+            newHead = curHead;
+            curHead = next;
+            // Loop invariant holds
+        }
+        // Loop invariant holds
         return newHead;
     }
 
