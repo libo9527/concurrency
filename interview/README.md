@@ -44,6 +44,8 @@
 
 【6-10】[例一：链表反转-循环实现](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/loop/LinkedListReverser.java)
 
+【6-11】[例二：链表中delete_if](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/loop/LinkedListDeletor.java)
+
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
 >
 > 链接: https://pan.baidu.com/s/1Hnuq4jGw2G9n4vS9-1SV_A 提取码: 1mw6
