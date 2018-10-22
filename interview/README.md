@@ -46,6 +46,26 @@
 
 【6-11】[例二：链表中delete_if](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/loop/LinkedListDeletor.java)
 
+【6-12】[二分查找](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/loop/BinarySearch.java)
+
+半开半闭区间的好处：
+
+1. [a, b) + [b, c) = [a, c)
+2. b - a = len([a, b))
+3. [a, a) ==> empty range
+
+取中位数的注意事项：
+
+1. `(a + b) / 2` 与 `a / 2 + b / 2` 在程序中不等价
+
+​	a = 1, b = 3 -> `a / 2 + b / 2 = 1` and ` (a + b) / 2 = 2` 
+
+2. `(a + b)`may overflow!
+
+   这个bug在之前的Java类库中被隐藏了十年。
+
+   可以改为：`a + (b - a) / 2`
+
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
 >
 > 链接: https://pan.baidu.com/s/1Hnuq4jGw2G9n4vS9-1SV_A 提取码: 1mw6
