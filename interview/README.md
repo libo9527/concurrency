@@ -70,6 +70,10 @@
 
 【6-16】[例一：根据前序中序构造二叉树](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/tree/TreeCreator.java)
 
+【6-17】[例二：寻找中序遍历时的下一结点](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/tree/InOrder.java)
+
+用途：JavaTreeMap和TreeSet的底层使用的搜索树（既二分查找树，再进一步是平衡二叉树），而搜索树的中序遍历是一个有序序列。
+
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
 >
 > 链接: https://pan.baidu.com/s/1Hnuq4jGw2G9n4vS9-1SV_A 提取码: 1mw6

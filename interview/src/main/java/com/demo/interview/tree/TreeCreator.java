@@ -28,4 +28,27 @@ public class TreeCreator {
         root.setRight(createTree(preOrder.substring(1 + rootIndex), inOrder.substring(rootIndex + 1)));
         return root;
     }
+
+    public TreeNode2 createSampleTree2() {
+        TreeNode2 root = new TreeNode2('A');
+        root.setLeft(new TreeNode2('B'));
+        root.getLeft().setLeft(new TreeNode2('D'));
+        root.getLeft().setRight(new TreeNode2('E'));
+        root.getLeft().getRight().setLeft(new TreeNode2('G'));
+        root.setRight(new TreeNode2('C'));
+        root.getRight().setRight(new TreeNode2('F'));
+        return root;
+    }
+
+    public TreeNode2 createTree2(String preOrder, String inOrder) {
+        if (preOrder.isEmpty()) {
+            return null;
+        }
+        char rootValue = preOrder.charAt(0);
+        int rootIndex = inOrder.indexOf(rootValue);
+        TreeNode2 root = new TreeNode2(rootValue);
+        root.setLeft(createTree2(preOrder.substring(1, 1 + rootIndex), inOrder.substring(0, rootIndex)));
+        root.setRight(createTree2(preOrder.substring(1 + rootIndex), inOrder.substring(rootIndex + 1)));
+        return root;
+    }
 }
