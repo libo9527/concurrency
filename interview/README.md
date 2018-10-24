@@ -74,6 +74,14 @@
 
 用途：JavaTreeMap和TreeSet的底层使用的搜索树（既二分查找树，再进一步是平衡二叉树），而搜索树的中序遍历是一个有序序列。
 
+【7-3，7-4】对象的特殊函数
+
+1. eques()  =>  hashCode()
+
+   重写时必须满足此条件。因为在HashMap或HashSet等集合中会先调用hashCode()快速排出一些再调用eques()。
+
+2. Java 1.7之后可以使用Object.equals()和Object.hash()来简化重写时的eques()和hashCode()。
+
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
 >
 > 链接: https://pan.baidu.com/s/1Hnuq4jGw2G9n4vS9-1SV_A 提取码: 1mw6
