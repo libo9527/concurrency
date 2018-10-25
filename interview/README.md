@@ -74,13 +74,39 @@
 
 用途：JavaTreeMap和TreeSet的底层使用的搜索树（既二分查找树，再进一步是平衡二叉树），而搜索树的中序遍历是一个有序序列。
 
-【7-3，7-4】对象的特殊函数
+【7-3，7-4】[对象的特殊函数](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/oop/Employee.java)
 
 1. eques()  =>  hashCode()
 
    重写时必须满足此条件。因为在HashMap或HashSet等集合中会先调用hashCode()快速排出一些再调用eques()。
 
 2. Java 1.7之后可以使用Object.equals()和Object.hash()来简化重写时的eques()和hashCode()。
+
+【7-5】[接口和抽象类]
+
+接口和实现类的区别：
+
+* 从实现角度看
+
+  1. 抽象类可以有成员变量
+  2. 抽象类可以有部分实现
+  3. 抽象类不可以多重继承，接口可以（可参考ArrayList源码）
+
+* 设计接口这个概念的原因
+
+  1. 从用户角度看问题
+  2. 强调合约
+  3. 强制协作双方无法犯错
+
+* 接口的多重实现
+
+  ![](https://i.loli.net/2018/10/24/5bcfcc9defc50.jpg)
+
+* 抽象类提供一些共有的实现，接口用来描述这个类有什么能力，是两个不同维度的东西。
+
+【7-6】[实现Iterable接口](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/linkedlist/LinkedList.java)
+
+
 
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
 >
