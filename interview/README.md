@@ -117,7 +117,26 @@ final关键字：
 
 **Java中如何把集合定义为一个不可变的集合？？？ **
 
+ 【7-11】[泛型]
 
+* 早期Java没有泛型
+* 为了兼容性，在运行时将所有泛型内容Erase
+  * 运行时：`List`,`List<String>`,`List<Integer>`没有区别
+  * 运行时如何知道泛型类型
+    * `void <T> printList(List<T> list, class<T> elementType)` 
+* 类型转换：
+  * `ArrayList<Integer>是List<Integer>`
+  * `List<Integer>不是List<Object>`
+    * 如果是的话，会存在类型转换异常
+  * 把`List<Integer>转换成List<Object>`
+    * `new ArrayList<Object>(intList)`
+    * `(List<Object>)(List)intList`
+
+语法：
+
+* `List<Integer> list = new ArrayList<>()//java 1.7`
+* `class A<T>`
+* `public <V> void func(List<V> list)`
 
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
 >
