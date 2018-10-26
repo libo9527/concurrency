@@ -106,6 +106,17 @@
 
 【7-6】[实现Iterable接口](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/linkedlist/LinkedList.java)
 
+【7-10】[面向对象-不可变性]
+
+final关键字：
+
+* 类申明：类不可以被继承
+* 函数申明：函数不可以在派生类中重写
+* 变量申明：变量不可以指向其他对象（基本数据类型值就不能再改了，引用类型具体的值是可以改变的。）
+* static final 变量：用户定义常量，名称一般大写
+
+**Java中如何把集合定义为一个不可变的集合？？？ **
+
 
 
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
