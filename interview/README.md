@@ -149,8 +149,8 @@ final关键字：
     * 作为Java类的静态变量
     * 使用框架提供的能力
 * [State Pattern](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/designpattern/company/Tester.java)
+* [Decorator Pattern](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/designpattern/task/Tester.java)
 
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
 >
 > 链接: https://pan.baidu.com/s/1Hnuq4jGw2G9n4vS9-1SV_A 提取码: 1mw6
-
