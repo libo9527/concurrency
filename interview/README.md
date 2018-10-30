@@ -150,6 +150,13 @@ final关键字：
     * 使用框架提供的能力
 * [State Pattern](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/designpattern/company/Tester.java)
 * [Decorator Pattern](https://github.com/libo9527/demo/blob/master/interview/src/main/java/com/demo/interview/designpattern/task/Tester.java)
+* 创建对象
+  * 使用new来创建的缺点
+    * 编译时必须决定创建哪个类的对象
+    * 参数意义不明确
+  * Abstract Factory Pattern 
+  * Builder Pattern
+    * 不可变对象往往配合Builder使用
 
 > [Google面试官亲授 升级Java面试](https://coding.imooc.com/class/132.html)
 >
