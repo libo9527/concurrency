@@ -1,6 +1,7 @@
 # volatile的使用
 
-适用于标记量的场景
+1. 做状态标识量
+2. Double Check 双重检测
 
 # 安全发布对象
 
@@ -8,3 +9,5 @@
 * 将对象的引用保存到volatile类型域或者AtomicReference对象中
 * 将对象的应用保存到某个正确构造对象的final类型域中
 * 将对象的引用保存到一个由锁保护的域中
+
+ [各种单例模式的写法](https://github.com/libo9527/demo/tree/master/concurrency/src/main/java/com/mmall/concurrency/example/singleton)
