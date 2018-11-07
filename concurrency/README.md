@@ -11,3 +11,5 @@
 * 将对象的引用保存到一个由锁保护的域中
 
  [各种单例模式的写法](https://github.com/libo9527/demo/tree/master/concurrency/src/main/java/com/mmall/concurrency/example/singleton)
+
+一个小规范：final应该写在static前面
