@@ -17,3 +17,7 @@
 # 线程封闭
 
 数据库连接池就是一种线程封闭的场景
+
+# 并发容器 J.U.C
+
+ConcurrentSkipListSet的add和contains等是原子性操作，但addAll，containsAll等批量操作并非原子性操作。
