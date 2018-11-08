@@ -13,3 +13,7 @@
  [各种单例模式的写法](https://github.com/libo9527/demo/tree/master/concurrency/src/main/java/com/mmall/concurrency/example/singleton)
 
 一个小规范：final应该写在static前面
+
+# 线程封闭
+
+数据库连接池就是一种线程封闭的场景
