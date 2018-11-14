@@ -1,10 +1,14 @@
 package com.mmall.springsecurity.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 /**
  * @Description：
@@ -14,6 +18,17 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity // 开启Spring Security的功能
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Bean // 解决报错：There is no PasswordEncoder mapped for the id "null"
+    public static PasswordEncoder passwordEncoder() {
+        return NoOpPasswordEncoder.getInstance();
+    }
+
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.inMemoryAuthentication().withUser("admin").password("123456").roles("ADMIN");
+        auth.inMemoryAuthentication().withUser("zhangsan").password("zhangsan").roles("ADMIN");
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
