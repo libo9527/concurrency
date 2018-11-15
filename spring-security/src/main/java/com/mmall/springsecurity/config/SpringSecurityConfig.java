@@ -19,9 +19,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity // 开启Spring Security的功能
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Bean // 解决报错：There is no PasswordEncoder mapped for the id "null"
+    //@Bean // 暂时解决报错：There is no PasswordEncoder mapped for the id "null"
     public static PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();
+        return NoOpPasswordEncoder.getInstance(); // NoOpPasswordEncoder只能在demo中出现
     }
 
     @Override
